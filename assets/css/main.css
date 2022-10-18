@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #F9F9F9 ;
+    color: #17453E;
+} 
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #17453E;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5vh;
+    
+}
+
+a {
+    padding: 0 0;
+    text-decoration: none;
+}
+
+.conjuntoDireita {
+    list-style: none;
+}
+
+.conjuntoDireita li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.logo {
+    margin-right: 25%;
+}
+
+
+#fotoUsuario img {
+    background-color: #CDF0EA;
+    border: 1px solid #fff;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#fotoUsuario :hover {
+    border: 2px solid #C689C6;
+    height: 55px;
+    width: 55px;
+
+}
+
+.post {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #17453E;
+    border-radius: 22px;
+    width: 400px;
+    height: fit-content;
+    margin: 2vh;
+}
+
+
+.autorPost {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #17453E;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style: none;
+    margin: 2px 1px 2px 10px;
+}
+
+
+#nomeAutor {
+    margin-left: 2%;
+}
+
+
+.iconeAutorPost {
+    background-color: #D8D8D8;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;  
+    cursor: pointer;
+}
+
+.container-imagemPost {
+   width: 400px;
+   height: 300px;
+}
+
+.container-imagemPost img {
+    width: 400px;
+    max-height: 300px;
+}
+
+.container-textoPost {
+    display: grid;
+    padding: 0 10px;
+    margin: 1% 4% 2% 4%;
+
+}
+
+.titulo {
+    font-size: x-large;
+    font-weight: 900;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+.iconesPost {
+    list-style: none;
+}
+
+.iconesPost li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin: 4px 2px 4px 2px
+}
+
+.iconesPost #iconeSalvar {
+    margin-left: 41%;
+}
+
+
+
+
+
+
+
+
+
+.copo::after {
+    position: fixed;
+    content: "";
+    height: 10px;
+    width: 90px;
+    background-color: #17453E;
+    left: -15px;
+    bottom: -10px;
+    border-radius: 10px;
+}
+
+.bolha {
+    height: 8px;
+    width: 8px;
+    background-color: #fbbe08;
+    border-radius: 50%;
+    position: absolute;
+    animation: bolhas forwards infinite;
+    opacity: 0.6;
+}
+
+@keyframes bolhas {
+    100% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+}
+
+.bolha-1 {
+    left: 10px;
+    bottom: 10px;
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+}
+
+.bolha-2 {
+    left: 20px;
+    bottom: 8px;
+    animation-delay: 1.2s;
+    animation-duration: 4s;
+}
+
+.bolha-3 {
+    left: 35px;
+    bottom: 2px;
+    animation-duration: 4s;
+}
+
+.copo {
+    height: 50px;
+    width: 60px;
+    border: 10px solid #17453E;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+    border-radius: 20px 20px 60px 60px;
+    animation: cafe 4s infinite linear;
+}
+
+@keyframes cafe {
+    100% {
+        background-position: -100% 0, -100% 0;
+    }
+}
+
+.copo::before {
+    content: "";
+    position: fixed;
+    height: 10px;
+    width: 20px;
+    border: 8px solid #17453E;
+    border-left: none;
+    right: -31px;
+    top: 1px;
+    border-radius: 0 30px 80px 0;
+}
+
