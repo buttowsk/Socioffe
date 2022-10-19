@@ -77,6 +77,7 @@
             nomeAutor.innerText = nomeDoAutor
             imgPost.src = imgDoPost
             tituloPost.innerText = tituloDoPost
+            //tituloPost.innerHTML = `<span id='titulo'>${tituloDoPost} </span><span id='pontos'>... <div id='divLeiaMais'role='button' tabindex='0' onclick='leiaMais()' style='cursor: pointer; display: inline'>mais</div></span><span id='mais'>${conteudoDoPost}</span>`
             conteudoPost.innerText = conteudoDoPost
     
             liIconesPost1.innerHTML = `<iconify-icon icon="icon-park-solid:like" style="color: #17453E;" width="28" height="28"></iconify-icon>`
@@ -85,6 +86,34 @@
             liIconesPost4.innerHTML = `<iconify-icon icon="heroicons-outline:save" style="color: #17453E;" width="28" height="28"></iconify-icon>`
     
         }
+
+
+/*
+
+function leiaMais () {
+    let titulo = document.getElementById('titulo')
+    let pontos = document.getElementById('pontos')
+    let maisTexto = document.getElementById('mais')
+    let divLeiaMais = document.getElementById('divLeiaMais')
+
+    if (pontos.style.display === 'none') {
+        pontos.style.display = 'inline'
+        maisTexto.style.display = 'none'
+        divLeiaMais.style.display='inline'
+    } else {
+        titulo.style.display = 'none'
+        pontos.style.display = 'none'
+        maisTexto.style.display= 'inline'
+        divLeiaMais.style.display='none'
+    }
+}
+*/
+
+/*
+function comentarios() {
+    let titulo = document.getElementById
+}
+*/
 
 
 window.onload = settarUsuarioAtual()

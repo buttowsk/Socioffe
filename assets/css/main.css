@@ -120,11 +120,13 @@ a {
 
 .titulo {
     font-size: x-large;
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 2%;
 }
 
-
+#mais {
+    display: none;
+}
 
 
 
