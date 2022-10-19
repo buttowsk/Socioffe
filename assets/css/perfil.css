@@ -5,6 +5,11 @@ body {
 }
 
 header {
+    overflow: hidden;
+    position: fixed;
+    background-color: #F9F9F9;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
