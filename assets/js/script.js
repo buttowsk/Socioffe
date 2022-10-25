@@ -124,10 +124,11 @@ window.onload = Promise.all(urls.map(x =>
  }).then(resp => {
     for (let i = 0; i<resp[0].posts.length; i++) {
         let numeroAleatorio = Math.floor(Math.random() * 31)
-        fetch ('https://coffee.alexflipnote.dev/random.json/')
+        //'https://coffee.alexflipnote.dev/random.json/'
+        fetch ('https://dog.ceo/api/breeds/image/random')
             .then(res => res.json())
             .then(jsonRes => {
-                let imagem = jsonRes.file
+                let imagem = jsonRes.message
                 return imagem
             }).then(imagem =>{
                 gerarDivs(resp[1].users[numeroAleatorio].image, resp[1].users[numeroAleatorio].firstName, imagem, resp[0].posts[numeroAleatorio].title, resp[0].posts[numeroAleatorio].body)
