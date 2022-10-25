@@ -1,6 +1,6 @@
 
     function settarUsuarioAtual () {
-        //let id = Math.floor(Math.random() * 30)
+        //let id = Math.floor(Math.random() * 31)
         let id = 24
         const iconeUser = document.getElementById('fotoUsuario')
 
