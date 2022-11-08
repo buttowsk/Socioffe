@@ -76,9 +76,9 @@
             iconeAutor.src = iconeDoAutor
             nomeAutor.innerText = nomeDoAutor
             imgPost.src = imgDoPost
-            tituloPost.innerText = tituloDoPost
-            //tituloPost.innerHTML = `<span id='titulo'>${tituloDoPost} </span><span id='pontos'>... <div id='divLeiaMais'role='button' tabindex='0' onclick='leiaMais()' style='cursor: pointer; display: inline'>mais</div></span><span id='mais'>${conteudoDoPost}</span>`
-            conteudoPost.innerText = conteudoDoPost
+            //tituloPost.innerText = tituloDoPost
+            tituloPost.innerHTML = `<span id='titulo'>${tituloDoPost} </span><span id='pontos'>... <div id='divLeiaMais'role='button' tabindex='0' onclick='leiaMais()' style='cursor: pointer; display: inline'>mais</div></span><span id='mais'>${conteudoDoPost}</span>`
+            //conteudoPost.innerText = conteudoDoPost
     
             liIconesPost1.innerHTML = `<iconify-icon icon="icon-park-solid:like" style="color: #17453E;" width="28" height="28"></iconify-icon>`
             liIconesPost2.innerHTML = `<iconify-icon icon="fa-solid:comments" style="color: #17453E;" width="28" height="28"></iconify-icon>`
@@ -88,13 +88,21 @@
         }
 
 
-/*
+
 
 function leiaMais () {
-    let titulo = document.getElementById('titulo')
-    let pontos = document.getElementById('pontos')
-    let maisTexto = document.getElementById('mais')
-    let divLeiaMais = document.getElementById('divLeiaMais')
+    //let titulo = document.getElementById('titulo')
+    //let pontos = document.getElementById('pontos')
+    //let maisTexto = document.getElementById('mais')
+    let divClicada = document.getElementById('divLeiaMais')
+    const parente = divClicada.parentNode
+    const h1 = parente.parentNode
+    let filhos = h1.children
+    let titulo = filhos[0]
+    let pontos = filhos[1]
+    let maisTexto = filhos[2]
+    let divLeiaMais = pontos.firstChild
+    
 
     if (pontos.style.display === 'none') {
         pontos.style.display = 'inline'
@@ -107,7 +115,7 @@ function leiaMais () {
         divLeiaMais.style.display='none'
     }
 }
-*/
+
 
 /*
 function comentarios() {
